@@ -1,0 +1,204 @@
+/* General Body Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #242d35; /* Very light blue-gray background */
+    color: #aec2f1; /* Dark gray text */
+    line-height: 1.6;
+}
+
+/* Streamlit Main Container */
+.stApp {
+    background-color: #242d35; /* Ensure main app background matches body */
+    padding: 30px; /* Add some padding around the main content */
+}
+
+/* Header/Title Styling */
+h1 {
+    color: #e9eff4; /* Darker blue for the main title */
+    text-align: left; /* Aligned left for logo on side */
+    padding-bottom: 20px;
+    border-bottom: 2px solid #d0d6dc; /* Slightly darker light gray border */
+    margin-bottom: 40px;
+    font-size: 2.8em; /* Larger main title */
+    font-weight: 700;
+    margin-left: 10px; /* Small margin to separate from logo */
+}
+
+h3 {
+    color: #adc2d8; /* Slightly lighter dark blue for subheaders */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Increased gap for icons */
+    font-size: 1.8em; /* Larger subheaders */
+    font-weight: 600;
+}
+
+h4 {
+    color: #a5aab2; /* Medium gray for sub-subheaders */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* Markdown text styling */
+.stMarkdown {
+    color: #ede9e9;
+    line-height: 1.7;
+    font-size: 1.07 em;
+}
+
+/* Input Section Container (Card-like) */
+.input-section-container, .stBlock {
+    background-color: 242d35;
+    border-radius: 18px; /* More rounded corners */
+    padding: 30px; /* More padding */
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Stronger, softer shadow */
+}
+
+/* File Uploader and Text Area */
+.stFileUploader, .stTextArea {
+    margin-bottom: 20px;
+    padding: 15px; 
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Spinner Styling */
+.stSpinner > div > div {
+    color: #1a5276; /* Spinner color */
+}
+
+/* Overall Score Section */
+.score-container {
+    padding: 40px; /* More padding */
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.circular-progress {
+    position: relative;
+    width: 220px; /* Slightly larger circle */
+    height: 220px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1), 0px 8px 15px rgba(0, 0, 0, 0.15); /* Inner and outer shadow */
+}
+
+.inner-circle {
+    width: 190px; /* Adjusted inner circle size */
+    height: 190px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05) inset; /* Subtle inner shadow */
+}
+
+.score-value {
+    font-size: 4em; /* Even larger font for the score */
+    font-weight: 800; /* Bolder score */
+    margin: 0;
+}
+
+.score-label {
+    color: #777; /* Slightly lighter gray for label */
+    margin: 0;
+    font-size: 1.1em;
+}
+
+/* Keyword Sections */
+.stAlert {
+    border-radius: 10px;
+    font-size: 0.95em;
+}
+
+/* Matched Keywords */
+.matched-keyword {
+    color: #28a745; /* Bootstrap success green */
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+/* Missing Keywords */
+.missing-keyword {
+    color: #dc3545; /* Bootstrap danger red */
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+/* Suggestions */
+.stMarkdown ul li {
+    margin-bottom: 10px; /* More space between list items */
+    line-height: 1.6;
+    padding-left: 5px;
+}
+
+/* Download Button */
+.stDownloadButton button {
+    background-color: #28a745; /* Green button */
+    color: white;
+    border-radius: 10px; /* More rounded button */
+    padding: 12px 25px; /* More padding */
+    font-size: 1.2em; /* Larger font */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Stronger shadow */
+}
+
+.stDownloadButton button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-3px); /* More pronounced lift effect */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Stronger shadow on hover */
+}
+
+/* Adjustments for the logo */
+/* The st.image component in Streamlit renders within a div with a specific class.
+   To center it, we can apply display: block and auto margins to that div. */
+div.stImage {
+    text-align: left; /* Align image to the left within its column */
+    margin-bottom: 25px; /* More space below logo */
+    display: flex; /* Use flexbox to align content */
+    align-items: center; /* Vertically center the image if needed */
+    justify-content: flex-start; /* Horizontally align to the start (left) */
+}
+
+/* Separator line */
+hr {
+    border-top: 1px solid #d0d6dc; /* Lighter separator */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Streamlit Expander styling */
+.streamlit-expanderHeader {
+    background-color: #f8f9fa; /* Light background for expander header */
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: 600; /* Make expander header text bolder */
+    color: #2c3e50;
+}
+
+.streamlit-expanderContent {
+    padding: 15px 20px;
+    font-size: 50px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-top: -5px; /* Adjust to sit right below header */
+}
