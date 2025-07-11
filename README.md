@@ -1,5 +1,6 @@
-<img width="1024" height="1024" alt="hike" src="https://github.com/user-attachments/assets/40d5162c-5aa3-4e53-9d4a-eb0d4ed2b36f" />
-## GotIT - AI-Powered Resume Analyzer
+<img width="100" height="100" alt="hike" src="https://github.com/user-attachments/assets/40d5162c-5aa3-4e53-9d4a-eb0d4ed2b36f" />
+
+# 📄 GotIT - AI-Powered Resume Analyzer
 
 This Streamlit web app compares your resume to a job description using AI and NLP techniques, then gives you smart suggestions to improve your match score.
 
