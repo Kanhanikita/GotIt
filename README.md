@@ -25,6 +25,13 @@ This Streamlit web app compares your resume to a job description using AI and NL
 - **Deployment:** Streamlit Cloud
 
 ---
+## 💡 Future Ideas
+- Resume improvement tips via GPT-4
+- Job description parser (auto detect key responsibilities)
+- Power BI dashboard integration
+- ATS compliance score
+  
+---
 
 ## 🚀 Try it now
 👉 [Launch App](https://goitresume.streamlit.app/)
